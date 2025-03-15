@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: OTAKUSYNTAX
+    runtime: node
+    region: oregon  # Change if needed (e.g., frankfurt for EU)
+    plan: free  # Upgrade if required
+    envVars:
+      - key: BOT_TOKEN
+        value: 7388444111:AAGAQAAHPtJKmW2dCCP6joJvV6PvsJDYL3g
+      - key: WEBHOOK_URL
+        value: https://tg-chatbot-6.onrender.com/bot${BOT_TOKEN}
+      - key: GOOGLE_API_KEY
+        value: AIzaSyARWn-1Vjcas6fuHMEN5eMG5yZSCmCtNZ4
+    buildCommand: npm install
+    startCommand: node bot.js
+    env: node
+    autoDeploy: true
+    rootDir: . # Change if needed
