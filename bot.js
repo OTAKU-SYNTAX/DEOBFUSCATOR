@@ -40,8 +40,7 @@ bot.on("message", async (msg) => {
                 renameVariables: false, // Prevent renaming variables (avoids errors)
                 renameGlobals: false, // Prevent renaming globals (avoids errors)
                 stringConcealing: true,
-                stringSplitting: false,
-                controlFlowFlattening: false, // Or false, depending on whether you want it enabled
+                stringSplitting: false
                 flatten: false,
                 shuffle: true,
                 duplicateLiteralsRemoval: false,
