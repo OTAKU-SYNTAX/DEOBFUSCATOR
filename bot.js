@@ -41,7 +41,7 @@ bot.on("message", async (msg) => {
                 renameGlobals: false, // Prevent renaming globals (avoids errors)
                 stringConcealing: true,
                 stringSplitting: false,
-                controlFlowFlattening: true, // Or false, depending on whether you want it enabled
+                controlFlowFlattening: false, // Or false, depending on whether you want it enabled
                 flatten: false,
                 shuffle: true,
                 duplicateLiteralsRemoval: false,
