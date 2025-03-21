@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Replace with your bot token
-const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
+const BOT_TOKEN = "7615408131:AAHAfOeYNFAk9QNuz1BGTivSYT4ptMm2Ehs";
 const bot = new TelegramBot(BOT_TOKEN, { polling: true });
 
 const japaneseChars = [
